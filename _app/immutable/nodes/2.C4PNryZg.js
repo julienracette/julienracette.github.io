@@ -1,0 +1,1 @@
+import"../chunks/DsnmJJEf.js";import"../chunks/BWyP-KBD.js";import{d as e}from"../chunks/uPz0C6sR.js";import{x as r,y as a}from"../chunks/Uv6jy0tI.js";function c(){alert("Welcome to Svelte!")}var m=r('<button class="svelte-j9fbyp">click me</button>');function s(o){var t=m();t.__click=[c],a(o,t)}e(["click"]);export{s as component};
