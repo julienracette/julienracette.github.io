@@ -1,10 +1,18 @@
-import adapter from '@sveltejs/adapter-static';
+// svelte.config.js
+import adapter from "@sveltejs/adapter-static";
 
 export default {
   kit: {
-    adapter: adapter(),
+    adapter: adapter({
+    }),
+
     paths: {
-      base: process.env.GITHUB_PAGES ? "/julienracette.github.io/" : ""
+      base: ""
+    },
+
+    prerender: {
+      crawl: true,
+      entries: ["*"]
     }
   }
 };
