@@ -6,7 +6,8 @@
 	"scripts": {
 		"build": "vite build",
 		"preview": "vite preview",
-		"deploy": "vite build && gh-pages -d build"
+		"deploy": "vite build && gh-pages -d build",
+        "dev": "chokidar 'src/**/*' -c 'npm run build' & serve build -p 4173"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^6.0.0",
@@ -14,7 +15,9 @@
 		"@sveltejs/kit": "^2.22.0",
 		"@sveltejs/vite-plugin-svelte": "^6.0.0",
 		"autoprefixer": "^10.4.20",
+		"chokidar-cli": "^3.0.0",
 		"gh-pages": "^6.3.0",
+		"serve": "^14.2.4",
 		"svelte": "^5.0.0",
 		"svelte-check": "^4.0.0",
 		"typescript": "^5.0.0",
